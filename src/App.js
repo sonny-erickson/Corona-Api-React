@@ -23,8 +23,6 @@ export default class App extends Component {
         .then(res => {
           const data = res.data.results[0];         
           this.updateData(data);
-          console.log(this.state);
-          console.log(data);
         })
         .catch(err => console.log(err));
   }

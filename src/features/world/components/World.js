@@ -2,7 +2,7 @@ import React from 'react';
 
 
 const World = (props) => {
-    console.log(props)
+   
     return (
         <>
             <h1 >World</h1>
@@ -14,7 +14,7 @@ const World = (props) => {
                     </div>
                 </div>
             </div>
-        </>
+        { console.log(props)}</>
     );
 };
 

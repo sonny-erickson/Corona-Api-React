@@ -4,8 +4,18 @@ import Loading from '../../components/utilis/Loading';
 
 export default (props) => {
         return (
-            <div className="d-flex flex-column flex-fill bg-danger " id="world">
-                <World/>
-            </div>
+        <>
+            {props.loading? (
+                <div className="d-flex flex-column flex-fill bg-danger " id="world">
+                    {console.log(props)}
+                    <World  data={props.data}  updateData={props.updateData} />
+                </div>
+
+            ) : (
+                <Loading/>
+            )}
+            
+            
+        </>
         )
 }
