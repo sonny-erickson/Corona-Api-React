@@ -1,5 +1,6 @@
 import React from 'react';
 import { World } from './components'
+import Loading from '../../components/utilis/Loading';
 
 export default (props) => {
         return (
