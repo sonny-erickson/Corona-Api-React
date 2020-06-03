@@ -1,7 +1,6 @@
 import React from 'react';
 import gif from './load.gif';
 
-
 export default () => {
     return (
         <div>

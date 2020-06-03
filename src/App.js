@@ -14,11 +14,9 @@ export default class App extends Component {
       data:null,
       loading:false
     }
-    
   }
 
   componentDidMount() {
-    
     apiCovid.get("global=stats")
         .then(res => {
           const data = res.data.results[0];         
@@ -32,7 +30,6 @@ export default class App extends Component {
        loading:true,
        data:data
     })
-    
    } 
 
   render() {
@@ -41,7 +38,6 @@ export default class App extends Component {
       <div className="App d-flex flex-column">
          <Header />
           <Switch>
-              
               <Route path="/world">
                   <World 
                     data={this.state.data} 
@@ -51,7 +47,6 @@ export default class App extends Component {
               </Route>
               <Route path="/country" component={ByCountry}/>
               <Redirect to="/world" />
-            
          </Switch>
       </div>
       </Router>

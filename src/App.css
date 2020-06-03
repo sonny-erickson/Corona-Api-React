@@ -2,10 +2,19 @@
   text-align: center;
   min-height: 100vh;
 }
-#world{
-  
+.card{
+  width: 20rem;
+  opacity: 0.5;
 }
-
+.card-title{
+  font-size: 20px;
+}
+.card-text{
+  font-size: 50px;
+}
+/* #world{
+ 
+} */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
