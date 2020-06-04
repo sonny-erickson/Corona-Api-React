@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Header} from './components';
 import World from './features/world';
 import ByCountry from './features/byCountry';
-import apiCovid from './conf/api.corona'
+import apiCovid from './conf/api.corona';
 import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
 
 import './App.css';
